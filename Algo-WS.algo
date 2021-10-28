@@ -1,0 +1,43 @@
+ALGORITHM algorithm_name
+VAR
+    sentence:STRING;
+    count:INTEGER:=0;
+    Words:INTEGER:=1;
+    voy:INTEGER:=0;
+    i:INTEGER;
+BEGIN
+    Read(sentence)
+
+// FOR i FROM 0 TO sentence.length STEP 1  DO
+//     if(sentence[i] != ' '):  
+//         count = count + 1; 
+// END_FOR
+    
+//     Write("Total number of characters in the sentence: " + count);  
+
+// FOR i FROM 0 TO sentence length STEP 1  DO
+//     if(sentence[i] = ' '):  
+//         Words = Words + 1; 
+// END_FOR
+//     Write("Total number of Words in the sentence: " + Words);  
+
+// FOR i FROM 0 TO sentence length STEP 1  DO
+//     if(sentence[i] = 'A' or 'a' or 'E' or 'e' or 'U' or 'u' or 'I' or 'i' or 'O' or 'o' or 'Y' or 'y' ):  
+//         voy = voy + 1; 
+// END_FOR
+//     Write("Total number of vowels in the sentence: " + voy);  
+
+FOR i FROM 0 TO sentence.length STEP 1  DO
+    if(sentence[i] != ' '):  
+        count = count + 1; 
+    if(sentence[i] = ' '):  
+        Words = Words + 1; 
+    if(sentence[i] = 'A' or 'a' or 'E' or 'e' or 'U' or 'u' or 'I' or 'i' or 'O' or 'o' or 'Y' or 'y' ):  
+        voy = voy + 1; 
+    
+END_FOR
+    Write("Total number of characters in the sentence: " + count); 
+    Write("Total number of Words in the sentence: " + Words);
+    Write("Total number of vowels in the sentence: " + voy); 
+
+END
